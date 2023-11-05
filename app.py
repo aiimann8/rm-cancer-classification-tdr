@@ -2,8 +2,13 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image
 from img_classification import teachable_machine_classification
+
+st.set_option('server.headless', True)
+st.set_option('server.port', 8501)
+st.set_option('browser.serverAddress', '0.0.0.0')
 st.set_page_config(layout="wide")
 #st.divider()
+
 st.title("Diagnòstic MRI de tumors cerebrals amb IRM")
 st.header("Brain Tumor MRI Classification")
 
