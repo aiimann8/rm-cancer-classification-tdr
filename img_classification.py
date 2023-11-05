@@ -3,6 +3,17 @@ import tensorflow as tf
 from PIL import Image, ImageOps
 import numpy as np
 
+st.markdown("""
+<style>
+.container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+""", unsafe_allow_html=True)
+
 
 def teachable_machine_classification(img, weights_file):
     # Load the model
